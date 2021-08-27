@@ -39,7 +39,7 @@ function addToUi() {
   // get data from localStorage
   const getNames = JSON.parse(localStorage.getItem('friends'));
 
-  if(listFriends.innerHTML == '' && getNames.length === 0 || getNames.length == null) {
+  if(listFriends.innerHTML == '' && getNames.length === 0 || localStorage.getItem('friends') === null) {
     const pictEmpty = document.createElement('div');
     pictEmpty.className = 'row';
     pictEmpty.innerHTML = `
