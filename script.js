@@ -39,7 +39,8 @@ function addToUi() {
   // get data from localStorage
   const getNames = JSON.parse(localStorage.getItem('friends'));
 
-  if(listFriends.innerHTML == '' && getNames.length === 0 || localStorage.getItem('friends') === null) {
+  if(listFriends.innerHTML == '' && localStorage.getItem('friends') === null) {
+
     const pictEmpty = document.createElement('div');
     pictEmpty.className = 'row';
     pictEmpty.innerHTML = `
@@ -47,7 +48,19 @@ function addToUi() {
       <img src="wait.svg" class="img-fluid">
     </div>`;
 
-    listFriends.append(pictEmpty);
+    listFriends.append(pictEmpty);  
+
+  } else if(listFriends.innerHTML == '' && getNames.length === 0) {
+
+    const pictEmpty = document.createElement('div');
+    pictEmpty.className = 'row';
+    pictEmpty.innerHTML = `
+    <div class="col-12 col-sm-8 col-md-7 col-lg-5 mx-auto">
+      <img src="wait.svg" class="img-fluid">
+    </div>`;
+
+    listFriends.append(pictEmpty);  
+
   } else {
 
     // gunanya untuk reset ketika manggil ulang
@@ -64,7 +77,10 @@ function addToUi() {
       listFriends.append(newli);
 
     })
+
   }
+
+  
   
 
   
