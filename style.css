@@ -1,0 +1,12 @@
+
+#name-friend:valid .button-field{
+  cursor: initial;
+}
+
+.button-field {
+  cursor: not-allowed;
+}
+
+/* #btn-add {
+  cursor: not-allowed;
+} */
