@@ -43,7 +43,7 @@ function addToUi() {
     const pictEmpty = document.createElement('div');
     pictEmpty.className = 'row';
     pictEmpty.innerHTML = `
-    <div class="col-5 mx-auto">
+    <div class="col-12 col-sm-8 col-md-7 col-lg-5 mx-auto">
       <img src="wait.svg" class="img-fluid">
     </div>`;
 

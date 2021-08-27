@@ -13,23 +13,26 @@
 <body>
   
 
-  <div class="wrapper p-5">
+  <div class="wrapper p-3 p-sm-5">
     <div class="container">
-      <h1 class="mb-5">List of My Friends 🧑‍🤝‍🧑</h1>
+      <h1 class="mb-3">List of My Friends 🧑‍🤝‍🧑</h1>
+      <p class="mb-5 sub-title">Bye bye lupa nama temen, sekarang kamu bisa
+        tulis nama teman kamu disini
+      </p>
 
 
       <h4 class="mb-3">Tambah Teman kamu</h4>
       <form class="row" id="form-friends">
-        <div class="col-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <input type="text" class="form-control" placeholder="Friend name" aria-label="Friend name" id="name-friend" name="name" required autocomplete="off">
         </div>
-        <div class="col-auto button-field">
+        <div class="col-12 col-sm-6 col-md-4 button-field d-grid d-sm-block">
           <button type="submit" class="btn btn-primary" id="btn-add" disabled>Tambah Teman</button>
         </div>  
       </form>
 
 
-      <div class="mt-5">
+      <div class="mt-4">
         <h5>Daftar Teman kamu</h5>
         <ul class="list-group list-group-flush" id="list-friends"></ul>
       </div>
